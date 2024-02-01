@@ -427,7 +427,7 @@
                 lineJoin: 'miter',
                 weight: 3.0, 
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
                     break;
                 default:
@@ -435,7 +435,7 @@
                 pane: 'pane_tl_2020_39_county20shp_2',
                 stroke: false, 
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
                     break;
             }
@@ -445,7 +445,7 @@
         map.getPane('pane_tl_2020_39_county20shp_2').style['mix-blend-mode'] = 'normal';
         var layer_tl_2020_39_county20shp_2 = new L.geoJson(json_tl_2020_39_county20shp_2, {
             attribution: '',
-            interactive: true,
+            interactive: false,
             dataVar: 'json_tl_2020_39_county20shp_2',
             layerName: 'layer_tl_2020_39_county20shp_2',
             pane: 'pane_tl_2020_39_county20shp_2',
