@@ -427,7 +427,7 @@
                 lineJoin: 'miter',
                 weight: 3.0, 
                 fillOpacity: 0,
-                interactive: false,
+                interactive: true,
             }
                     break;
                 default:
@@ -435,7 +435,7 @@
                 pane: 'pane_tl_2020_39_county20shp_2',
                 stroke: false, 
                 fillOpacity: 0,
-                interactive: false,
+                interactive: true,
             }
                     break;
             }
@@ -445,7 +445,7 @@
         map.getPane('pane_tl_2020_39_county20shp_2').style['mix-blend-mode'] = 'normal';
         var layer_tl_2020_39_county20shp_2 = new L.geoJson(json_tl_2020_39_county20shp_2, {
             attribution: '',
-            interactive: false,
+            interactive: true,
             dataVar: 'json_tl_2020_39_county20shp_2',
             layerName: 'layer_tl_2020_39_county20shp_2',
             pane: 'pane_tl_2020_39_county20shp_2',
@@ -454,6 +454,8 @@
         });
         bounds_group.addLayer(layer_tl_2020_39_county20shp_2);
         map.addLayer(layer_tl_2020_39_county20shp_2);
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'tl_2020_39_county20.shp<br /><table><tr><td style="text-align: center;"><img src="legend/tl_2020_39_county20shp_2_Franklin0.png" /></td><td>Franklin</td></tr><tr><td style="text-align: center;"><img src="legend/tl_2020_39_county20shp_2_1.png" /></td><td></td></tr></table>': layer_tl_2020_39_county20shp_2,'tl_2020_us_zcta520.shp<br /><table><tr><td style="text-align: center;"><img src="legend/tl_2020_us_zcta520shp_1_AndreaYagoda0.png" /></td><td>Andrea Yagoda</td></tr><tr><td style="text-align: center;"><img src="legend/tl_2020_us_zcta520shp_1_AnnIsaacsBillWood1.png" /></td><td>Ann Isaacs, Bill Wood</td></tr><tr><td style="text-align: center;"><img src="legend/tl_2020_us_zcta520shp_1_AnnIsaacsBillWoodMaryAubry2.png" /></td><td>Ann Isaacs, Bill Wood (Mary Aubry)</td></tr><tr><td style="text-align: center;"><img src="legend/tl_2020_us_zcta520shp_1_BaileyCulp3.png" /></td><td>Bailey Culp</td></tr><tr><td style="text-align: center;"><img src="legend/tl_2020_us_zcta520shp_1_BrindaCopsey4.png" /></td><td>Brinda Copsey</td></tr><tr><td style="text-align: center;"><img src="legend/tl_2020_us_zcta520shp_1_ColleenCrook5.png" /></td><td>Colleen Crook</td></tr><tr><td style="text-align: center;"><img src="legend/tl_2020_us_zcta520shp_1_MaryMynatt6.png" /></td><td>Mary Mynatt</td></tr><tr><td style="text-align: center;"><img src="legend/tl_2020_us_zcta520shp_1_MattCaffrey7.png" /></td><td>Matt Caffrey</td></tr><tr><td style="text-align: center;"><img src="legend/tl_2020_us_zcta520shp_1_MelissaSull8.png" /></td><td>Melissa Sull</td></tr><tr><td style="text-align: center;"><img src="legend/tl_2020_us_zcta520shp_1_PierreWolf9.png" /></td><td>Pierre Wolf</td></tr><tr><td style="text-align: center;"><img src="legend/tl_2020_us_zcta520shp_1_RobynHarper10.png" /></td><td>Robyn Harper</td></tr><tr><td style="text-align: center;"><img src="legend/tl_2020_us_zcta520shp_1_SandraFeihrer11.png" /></td><td>Sandra Feihrer</td></tr><tr><td style="text-align: center;"><img src="legend/tl_2020_us_zcta520shp_1_SandraFiehrer12.png" /></td><td>Sandra Fiehrer</td></tr><tr><td style="text-align: center;"><img src="legend/tl_2020_us_zcta520shp_1_SusanYost13.png" /></td><td>Susan Yost</td></tr><tr><td style="text-align: center;"><img src="legend/tl_2020_us_zcta520shp_1_unassigned14.png" /></td><td>unassigned</td></tr><tr><td style="text-align: center;"><img src="legend/tl_2020_us_zcta520shp_1_15.png" /></td><td></td></tr></table>': layer_tl_2020_us_zcta520shp_1,"Google Road": layer_GoogleRoad_0,},{collapsed:false}).addTo(map);
         setBounds();
         </script>
     </body>
